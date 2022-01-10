@@ -12,6 +12,7 @@ import { createStore } from 'redux';
 import allReducers from './reducers';
 import { Provider } from 'react-redux';
 import NewContactModal from './components/NewContactModal';
+import SearchBar from './components/SearchBar';
 
 const store = createStore(allReducers)
 
@@ -30,11 +31,14 @@ export default function App() {
           <BottomNavigationAction label="All Contacts" icon={<PersonIcon />} />
           <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
         </BottomNavigation>
+          <SearchBar></SearchBar>
+          <br/>
         {(value===0)&&(<Recent/>)}
         {(value===1)&&(<AllContacts/>)}
         {(value===2)&&(<Favorite/>)}
       </Box>
       <NewContactModal/>
     </Provider>
+
   );
 }

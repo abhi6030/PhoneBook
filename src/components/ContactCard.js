@@ -18,14 +18,20 @@ const styles = {
     mobile : {
         fontSize: '14px',
         color: 'grey'
-    }
+    },
+    maincard : {
+        color : 'grey',
+        display: 'flex',
+        padding: '8px',
+        alignItems: 'center',
+        height : '100%',
+      }
 }
 
 function stringToColor(string) {
     let hash = 0;
     let i;
   
-    /* eslint-disable no-bitwise */
     for (i = 0; i < string.length; i += 1) {
       hash = string.charCodeAt(i) + ((hash << 5) - hash);
     }
@@ -69,7 +75,6 @@ function ContactCard(props) {
                     value={props.isFav}
                     max={1}
                     onChange={(event, newValue) => {
-                        // setValue(newValue);
                         dispatch(toggle_fav(props.id))
                     }}
                 />

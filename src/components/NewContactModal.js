@@ -31,7 +31,7 @@ export default function NewContactModal() {
     <div>
       <SpeedDial
         ariaLabel="SpeedDial basic example"
-        sx={{ position: 'absolute', bottom: 16, right: 16 }}
+        sx={{ position: 'absolute', bottom: 100, right: 470}}
         icon={<SpeedDialIcon />}
         onClick={handleOpen}
       >

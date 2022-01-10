@@ -2,17 +2,59 @@ export function allContactsReducer(state = [
     {
         id: 0,
         name: "Shalaka Shrawage",
-        mobile: "9999999999",
+        mobile: "7777777777",
         email: "shalaka@gmail.com",
         isFav: true
     },
     {
         id: 1,
         name: "Abhishek Salvi",
-        mobile: "9999998999",
+        mobile: "2462462467",
         email: "abbishek.com",
         isFav: false
     },
+    {
+        id: 2,
+        name: "Shalaka Shrawage",
+        mobile: "7777777777",
+        email: "shalaka@gmail.com",
+        isFav: true
+    },
+    {
+        id: 3,
+        name: "Abhishek Salvi",
+        mobile: "2462462467",
+        email: "abbishek.com",
+        isFav: false
+    },
+    {
+        id: 4,
+        name: "Shalaka Shrawage",
+        mobile: "7777777777",
+        email: "shalaka@gmail.com",
+        isFav: true
+    },
+    {
+        id: 5,
+        name: "Abhishek Salvi",
+        mobile: "2462462467",
+        email: "abbishek.com",
+        isFav: false
+    },
+    {
+        id: 6,
+        name: "Shalaka Shrawage",
+        mobile: "7777777777",
+        email: "shalaka@gmail.com",
+        isFav: true
+    },
+    {
+        id: 7,
+        name: "Abhishek Salvi",
+        mobile: "2462462467",
+        email: "abbishek.com",
+        isFav: true
+    }
 ], action) {
     switch(action.type) {
         case 'NEW_CONTACT':
